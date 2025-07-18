@@ -1,6 +1,6 @@
 # React + TypeScript + Vite
 
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://zievo.com.br/wp-content/uploads/2022/06/Logo-Zievo-Branca.png" width="400" alt="Laravel Logo"></a></p>
+<img width="1918" height="915" alt="Image" src="https://github.com/user-attachments/assets/c3d6bab2-9cdf-4413-9a1c-b176739d3180" />
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

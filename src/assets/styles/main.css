@@ -1,0 +1,34 @@
+@import './sidebar.css';
+@import './table.css';
+
+header {
+    display: flex;
+    padding: 0 10px 0 10px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    height: 55px;
+}
+
+
+main {
+    width: calc(100% - 250px);
+    position: fixed;
+    min-height: 100%;
+    right: 0;
+    top: 0;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+
+section {
+    border: #d6dbde solid 1px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    height: 800px;
+    padding: 15px;
+    margin: 15px;
+}

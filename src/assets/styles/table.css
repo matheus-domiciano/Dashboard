@@ -1,0 +1,56 @@
+
+table {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #12242d;
+}
+
+thead th:first-child {
+    border-radius: 5px 0 0 0;
+}
+
+thead th:not(:last-child) {
+    border-right: 1px solid #caced4;
+}
+
+th, td {
+    border-bottom: 1px solid #dce0e5;
+    text-align: left;
+}
+
+
+th {
+    background-color: #e7eaf0;
+    padding: 14px 0 14px 15px;
+    font-weight: 400;
+}
+
+td{
+    height: 45px;
+    font-weight: 400;
+}
+td:not(:last-child){
+    padding: 0 0 0 15px;
+}
+
+
+/*
+td:last-child {
+    padding: 14px 0 14px 0; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}*/
+
+.action-btn {
+    
+}
+
+.add-new-button {
+    background: #348ad9 !important;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}

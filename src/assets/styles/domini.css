@@ -1,0 +1,253 @@
+.flex-center {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+/*-------------- SIDE ELEMENTS PREDEFINED --------------*/
+
+input[type="text"][class~='inputPredef-R']:focus{
+	animation: inputAnimationPreDef-R 0.14s;
+	animation-fill-mode: forwards;
+}
+@keyframes inputAnimationPreDef-R {
+	from {}
+  	to {
+	box-shadow: -1px 0 0 4px rgba(186, 197, 207, .5); 
+	border: 1px solid #9bb0c4; 
+	}
+}
+/*-------------- REVERSE RIGHT --------------*/
+input[type="text"][class~='inputPredef-R']{
+	border: 1px solid #d4d4d4;
+	border-radius: 7px 0 0 7px;	
+	padding: 7px 5px 7px 10px;
+	z-index: 100;
+	animation: ReverseinputAnimationPreDef-R .14s;
+	animation-fill-mode: forwards;
+}
+@keyframes ReverseinputAnimationPreDef-R {
+	from {	box-shadow: -1px 0 0 4px rgba(186, 197, 207, .5); 
+	border: 1px solid #9bb0c4;}
+  	to {
+	}
+}
+
+
+/*------------------------------------------------------------*/
+
+input[type="text"][class~='inputPredef-L']:focus{
+	animation: inputAnimationPreDef-L .14s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes inputAnimationPreDef-L {
+	from {}
+  	to {
+	box-shadow: 1px 0 0 4px rgba(186, 197, 207, .5); 
+	border: 1px solid #9bb0c4; 
+	}
+}
+span[class~='input-ItemPredef-R']{
+	position: relative;
+	z-index: 1;
+	padding: 8px 10px 9px 10px;
+	border: 1px solid #d4d4d4;
+	border-radius: 0 7px 7px 0;
+	background-color: #e9ecef;
+	margin-left: -5px;
+
+}
+/*-------------- REVERSE LEFT --------------*/
+input[type="text"][class~='inputPredef-L']{
+	border: 1px solid #d4d4d4;
+	border-radius: 0 7px 7px 0;	
+	padding: 7px 5px 7px 10px;
+	animation: ReverseinputAnimationPreDef-L .14s;
+	animation-fill-mode: forwards;
+}
+@keyframes ReverseinputAnimationPreDef-L {
+	from {	box-shadow: 0 0 0 4px rgba(186, 197, 207, .5); 
+	border: 1px solid #9bb0c4;}
+  	to {
+	}
+}
+span[class~='input-ItemPredef-L']{
+	position: relative;
+	z-index: 1;
+	padding: 8px 10px 9px 10px;
+	border: 1px solid #d4d4d4;
+	border-radius: 7px 0 0 7px;
+	background-color: #e9ecef;
+	margin-right: -10px;
+}
+
+
+
+
+/*------------------------------------------------------------*/
+
+
+
+
+
+input[type='text'], input[type='search'], select{
+	border: 1px solid #d4d4d4;
+	border-radius: 7px;
+	-webkit-transition: all, 0.2s, ease-in;
+	-moz-transition: all, 0.2s, ease-in;
+	-o-transition: all, 0.2s, ease-in;
+	transition: all, 0.2s, ease-in;
+	outline: 0;
+}
+input[type='text']:hover, input[type='search']:hover, select:hover{
+	border: 1px solid rgb(159, 173, 177);
+}
+
+
+
+/*---------[ Select ]---------*/
+select[class~='Domini']{
+	padding: 7px 5px 7px 10px;
+	animation: reverseInputAnimation .18s;
+	animation-fill-mode: forwards;
+}
+select[class~='Domini']:focus{
+	animation: inputAnimation .18s;
+	animation-fill-mode: forwards;
+}
+/*---------[ Date ]---------*/
+input[type="date"]{
+	padding: 1px 7px 1px 10px;
+	animation: reverseInputAnimation .15s;
+	animation-fill-mode: forwards;
+}
+input[type="date"][class~='Domini']:focus{
+	animation: inputAnimation .15s;
+	animation-fill-mode: forwards;
+}
+/*---------[ Text ]---------*/
+input[type="text"]{
+	padding: 7px 5px 7px 10px;
+	animation: reverseInputAnimation .18s;
+	animation-fill-mode: forwards;
+}
+
+input[type="text"][class~='Domini']:focus{
+	animation: inputAnimation .18s;
+	animation-fill-mode: forwards;
+}
+
+input[type="text"][class~='Domini']:focus{
+	animation: inputAnimation .18s;
+	animation-fill-mode: forwards;
+}
+
+
+
+/*---------[ Search ]---------*/
+/*
+input[type="search"][class~='Domini']:hover{
+	animation: inputHoverAnimation .20s;
+	animation-fill-mode: forwards;
+}*/
+
+input[type="search"][class~='Domini']:focus{
+	animation: inputAnimation .20s;
+	animation-fill-mode: forwards;
+}
+
+input[type="search"][class~='Domini']{
+	padding: 10px 10px 10px 35px;
+	animation: reverseInputAnimation .20s;
+	animation-fill-mode: forwards;
+}
+
+
+
+/*---------[ Number ]---------*/
+input[type="number"][class~='Domini']{
+	padding: 7px 5px 7px 10px;
+	animation: reverseInputAnimation .18s;
+	animation-fill-mode: forwards;
+}
+input[type="number"][class~='Domini']:focus{
+	animation: inputAnimation .18s;
+	animation-fill-mode: forwards;
+}
+/*---------[ Button ]---------*/
+button[class~='Domini']{
+	outline: 0;
+    cursor: pointer;
+}
+
+button[class~='Domini']:active{
+	animation: borderFocusAnim .18s;
+	animation-fill-mode: forwards;
+}
+button[class~='Domini']:focus{
+	animation: borderFocusAnim .18s;
+	animation-fill-mode: forwards;
+}
+button[class~='Domini']:hover{
+	animation: inputAnimation .18s;
+	animation-fill-mode: forwards;
+}
+
+
+
+@keyframes borderFocusAnim {
+	from {}
+  	to {
+	box-shadow: 0 0 0 4px rgba(186, 197, 207, .5); 
+	border: 2px solid #9bb0c4; 
+	}
+}
+
+@keyframes inputAnimation {
+	from {}
+  	to {
+	box-shadow: 0 0 0 4px rgba(186, 197, 207, .5); 
+	border: 1px solid #9bb0c4; 
+	}
+}
+@keyframes inputHoverAnimation {
+	from {}
+  	to {
+	border: 1px solid #9bb0c4; 
+	}
+}
+@keyframes reverseInputAnimation {
+	from {box-shadow: 0 0 0 4px rgba(186, 197, 207, .5); 
+	border: 1px solid #9bb0c4; }
+  	to {
+	}
+}
+
+
+
+
+label[data-label~="labelTop"]{
+    display: block;
+	font-weight: 500;
+  }
+
+
+
+
+
+/*---------------------------[ PORCENTAGEM WIDTH DOMINI]---------------------------*/
+.widthPerc1{width:1%;}.widthPerc2{width:2%;}.widthPerc3{width:3%;}.widthPerc4{width:4%;}.widthPerc5{width:5%;}.widthPerc6{width:6%;}.widthPerc7{width:7%;}.widthPerc8{width:8%;}.widthPerc9{width:9%;}.widthPerc10{width:10%;}.widthPerc11{width:11%;}.widthPerc12{width:12%;}.widthPerc13{width:13%;}.widthPerc14{width:14%;}.widthPerc15{width:15%;}.widthPerc16{width:16%;}.widthPerc17{width:17%;}.widthPerc18{width:18%;}.widthPerc19{width:19%;}.widthPerc20{width:20%;}.widthPerc21{width:21%;}.widthPerc22{width:22%;}.widthPerc23{width:23%;}.widthPerc24{width:24%;}.widthPerc25{width:25%;}.widthPerc26{width:26%;}.widthPerc27{width:27%;}.widthPerc28{width:28%;}.widthPerc29{width:29%;}.widthPerc30{width:30%;}.widthPerc31{width:31%;}.widthPerc32{width:32%;}.widthPerc33{width:33%;}.widthPerc34{width:34%;}.widthPerc35{width:35%;}.widthPerc36{width:36%;}.widthPerc37{width:37%;}.widthPerc38{width:38%;}.widthPerc39{width:39%;}.widthPerc40{width:40%;}.widthPerc41{width:41%;}.widthPerc42{width:42%;}.widthPerc43{width:43%;}.widthPerc44{width:44%;}.widthPerc45{width:45%;}.widthPerc46{width:46%;}.widthPerc47{width:47%;}.widthPerc48{width:48%;}.widthPerc49{width:49%;}.widthPerc50{width:50%;}.widthPerc51{width:51%;}.widthPerc52{width:52%;}.widthPerc53{width:53%;}.widthPerc54{width:54%;}.widthPerc55{width:55%;}.widthPerc56{width:56%;}.widthPerc57{width:57%;}.widthPerc58{width:58%;}.widthPerc59{width:59%;}.widthPerc60{width:60%;}.widthPerc61{width:61%;}.widthPerc62{width:62%;}.widthPerc63{width:63%;}.widthPerc64{width:64%;}.widthPerc65{width:65%;}.widthPerc66{width:66%;}.widthPerc67{width:67%;}.widthPerc68{width:68%;}.widthPerc69{width:69%;}.widthPerc70{width:70%;}.widthPerc71{width:71%;}.widthPerc72{width:72%;}.widthPerc73{width:73%;}.widthPerc74{width:74%;}.widthPerc75{width:75%;}.widthPerc76{width:76%;}.widthPerc77{width:77%;}.widthPerc78{width:78%;}.widthPerc79{width:79%;}.widthPerc80{width:80%;}.widthPerc81{width:81%;}.widthPerc82{width:82%;}.widthPerc83{width:83%;}.widthPerc84{width:84%;}.widthPerc85{width:85%;}.widthPerc86{width:86%;}.widthPerc87{width:87%;}.widthPerc88{width:88%;}.widthPerc89{width:89%;}.widthPerc90{width:90%;}.widthPerc91{width:91%;}.widthPerc92{width:92%;}.widthPerc93{width:93%;}.widthPerc94{width:94%;}.widthPerc95{width:95%;}.widthPerc96{width:96%;}.widthPerc97{width:97%;}.widthPerc98{width:98%;}.widthPerc99{width:99%;}.widthPerc100{width:100%;}
+/*-------------------------------------------------------------------------------*/

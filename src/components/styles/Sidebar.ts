@@ -75,8 +75,8 @@ const styles = Style({
     backgroundColor: 'rgb(62 121 177)'
   },
   icons: {
-    width: '28px',
-    height: '28px',
+    width: '25px',
+    height: '25px',
     margin: '0 14px 0 0',
     // fill: 'rgb(46, 49, 51)',
     fill: '#fff',

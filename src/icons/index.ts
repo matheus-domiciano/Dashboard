@@ -8,4 +8,7 @@ export * from './Trash'
 export * from './Pencil'
 export * from './Printer'
 export * from './CSV'
+export * from './Search'
+export * from './Inspection'
+export * from './Calendar'
 

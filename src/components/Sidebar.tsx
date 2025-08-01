@@ -1,7 +1,7 @@
 import styles from './styles/Sidebar'
 import { Link } from 'react-router-dom'
 import { Color } from '../themes/Themes'
-import { Speedometer,  PriceDown, ArrowLeft, CoinIcon } from '../icons'
+import { Speedometer, ArrowLeft, CoinIcon, InspectionIcon, CalendarIcon } from '../icons'
 import { useState } from 'react'
 
 const Sidebar = () => { 
@@ -44,7 +44,7 @@ const Sidebar = () => {
 
                                     <p style={{
                                         ...(activePage == 'home' ? styles.activeTextButton : styles.disabledTextButton)
-                                    }}> Painel </p>
+                                    }}> Dashboard </p>
                                 </span>
 
                             </button>
@@ -66,7 +66,7 @@ const Sidebar = () => {
                                     <Speedometer style={styles.icons} />
 
                                     <p style={{
-                                        ...(activePage == 'home' ? styles.activeTextButton : styles.disabledTextButton)
+                                        ...(activePage == 'clientes' ? styles.activeTextButton : styles.disabledTextButton)
                                     }}> Painel </p>
                                 </span>
 
@@ -96,34 +96,34 @@ const Sidebar = () => {
                                 className='sidebar-btn'>
 
                                 <span style={styles.itemButtonContainer}>
-                                    <Speedometer style={styles.icons} />
+                                    <InspectionIcon style={styles.icons} />
 
                                     <p style={{
-                                        ...(activePage == 'home' ? styles.activeTextButton : styles.disabledTextButton)
-                                    }}> Painel </p>
+                                        ...(activePage == 'inspecoes' ? styles.activeTextButton : styles.disabledTextButton)
+                                    }}> Inspeções </p>
                                 </span>
 
                             </button>
                         </li>
                     </Link>
 
-                    <Link to='/nova-inspecao'>
+                    <Link to='/agendamentos'>
 
                         <li>
                             <button
-                                onClick={()=>setActivePage('nova-inspecao')} 
+                                onClick={()=>setActivePage('agendamentos')} 
                                 style={{
                                     ...styles.buttons,
-                                    ...(activePage == 'nova-inspecao' ? styles.activeAsideBtn : {})
+                                    ...(activePage == 'agendamentos' ? styles.activeAsideBtn : {})
                                 }} 
                                 className='sidebar-btn'>
 
                                 <span style={styles.itemButtonContainer}>
-                                    <Speedometer style={styles.icons} />
+                                    <CalendarIcon style={styles.icons} />
 
                                     <p style={{
-                                        ...(activePage == 'home' ? styles.activeTextButton : styles.disabledTextButton)
-                                    }}> Painel </p>
+                                        ...(activePage == 'agendamentos' ? styles.activeTextButton : styles.disabledTextButton)
+                                    }}> Agenda </p>
                                 </span>
 
                             </button>
@@ -200,7 +200,7 @@ const Sidebar = () => {
                                     <Speedometer style={styles.icons} />
 
                                     <p style={{
-                                        ...(activePage == 'home' ? styles.activeTextButton : styles.disabledTextButton)
+                                        ...(activePage == 'teste' ? styles.activeTextButton : styles.disabledTextButton)
                                     }}> Painel </p>
                                 </span>
 

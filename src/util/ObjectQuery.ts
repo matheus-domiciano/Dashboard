@@ -6,8 +6,11 @@
  */
 
 class SearchByKey {
-    static find(){
-
+    static find<T extends { id: any }>(id: any, data: T[]): T[] {
+        if (!Array.isArray(data)) {
+            return []
+        }
+        return data.filter(item => item.id === id)
     }
 }
 
@@ -25,8 +28,9 @@ class ObjectQuery {
     static mappedTypes = {
         value: SearchByValue,
         key: SearchByKey,
+        id: SearchByKey, // Added mapping for 'id' type
         default: {
-            validade: (type) => {
+            validate: (type) => {
                 throw new Error(`Invalid query type: ${type}`);
             }
         }
